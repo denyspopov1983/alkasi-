@@ -1,93 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouquet Pandora | TopFlowers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sk_shop | Link in Bio</title>
+ 
+ <!-- Подключаем Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #ff9a9a49;
+      color: #111;
+      text-align: center;
+      padding: 20px;
+    }
 
-    <!-- LIBS -->
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    /* Профиль */
+    .profile {
+      margin-top: 30px;
+      font-weight: bold;
 
-    <!-- MAIN STYLES -->
-    <link rel="stylesheet" href="css/style.css">
+    }
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .profile h1 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+    .profile p {
+      font-size: 1.5rem;
+      color: #000000;
+      margin-bottom: 25px;
+    }
 
+        .fob p {
+      font-size: 2.5rem;
+      color: #000000;
+      margin-bottom: 25px;
+    }
+
+    /* Кнопки-ссылки */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 60px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .links a i {
+      font-size: 1.2rem;
+    }
+
+    /* Индивидуальные цвета */
+    .catalog { background: #007bff; }     /* Синий */
+    .catalog:hover { background: #0056b3; }
+
+    .new { background: #ff5722; }         /* Оранжевый */
+    .new:hover { background: #e64a19; }
+
+    .sale { background: #e91e63; }        /* Розовый */
+    .sale:hover { background: #c2185b; }
+
+    .track { background: #7360f2; }       /* Зелёный */
+    .track:hover { background: #2d00f8; }
+
+    .telegram { background: #229ED9; }    /* Телеграм */
+    .telegram:hover { background: #0078a9; }
+
+    /* Соцсети */
+    .social {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .fob {
+      padding: 100px;
+    }
+    .social a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: #111;
+      transition: 0.3s;
+    }
+    .social a:hover {
+      color: #ff6b6b;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    /* Мобильная адаптивность */
+    @media (max-width: 480px) {
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+      .links a {
+        font-size: 1.1rem;
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-    <!--  <div class="container">
-        <header class="header">
-            <a href="#" class="header-brand"><span>Top</span>Flowers</a>
+  <!-- Профиль -->
+  <div class="profile">
+    <img src="image/ЛОГО.png" alt="Аватар">
+    <p>Доброго дня!</p> 
+    <p>Ви перейшли на інформаційну сторінку </p>
+     <p>магазину LK</p>
 
-            <nav class="header-navbar">
-                <a href="#" class="header-navbar-link">Gifts</a>
-                <a href="#" class="header-navbar-link">Roses</a>
-                <a href="#" class="header-navbar-link">Baskets</a>
-                <a href="#" class="header-navbar-link">About us</a>
-                <a href="#" class="header-navbar-link">Contacts</a>
-            </nav>
-        </header>
-    </div> -->
-    <!-- /.container -->
+    
+  </div>
 
-    <div class="container">
-        <main class="main">
-            <div class="main-photo">
-                <img src="img/pandora.jpg" alt="">
-            </div>
-            <!-- /.main-photo -->
+  <!-- Ссылки -->
+  <div class="links">
+    <a href="#" class="catalog"><i class="fa-solid fa-phone"></i> 068 742 49 33</a>
+    <a href="https://www.instagram.com/lk_bags___?igsh=djhjZmR4MHQ0MjR6" class="sale"><i class="fa-brands fa-square-instagram"></i> Наш instagram</a>
+    <a href="viber://chat?number=+380687424933" class="track"><i class="fa-brands fa-viber"></i> Наш Viber</a>
+   
+    <a href="https://web.telegram.org/a/#-1003083254946" class="telegram"><i class="fab fa-telegram"></i> Наш Telegram</a>
+    
 
-            <div class="main-details">
-                <!--  <span class="main-details-vendor">#83754385</span> -->
-                <h1 class="main-details-title">КРИПТО АЛКАШИ</h1>
-                <p class="main-details-text">Короче мы крутая банда алкашей с Измаила создали ахуеть какой не в рот
-                    ебаться монету блять. Предлагаем всем купить нашу монету
-                    так как алкешей на земле больше чем спортцменов. Так шо харэ думать залитай и через неделю ты
-                    миллионер.
-                </p>
+  </div>
+   
+  <!-- Соцсети 
+  <div class="social">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-telegram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div> -->
 
-                <div class="main-details-price">
-                    <span class="main-details-price-price">100$ </span>
 
-                    <div class="main-details-price-action">
-                        <button class="btn"
-                            onclick="location.href='https://drive.google.com/file/d/1bfy1oTunH-u1Jq4FcIFiHMm7q_w_a1Rm/view?usp=sharing'">ПОКУПАЙ</button>
+<!-- Профиль -->
+  <div class="fob">
+   
+    <p>ПРАЦЮЄМО ОФІЦІЙНО </p> 
+    <img src="image/fop.png" alt="Аватар">
+    
+  </div>
+  <footer>
+    <p>© 2025 LK | Зроблено с ❤️</p>
+  </footer>
 
-                    </div>
-                    <!-- /.main-details-price-action -->
-
-                    <!--    <div class="main-details-price-reviews">
-                        <ul class="main-details-price-reviews-stars">
-                            <li><span class="iconify" data-icon="bi:star-fill"></span></li>
-                            <li><span class="iconify" data-icon="bi:star-fill"></span></li>
-                            <li><span class="iconify" data-icon="bi:star-fill"></span></li>
-                            <li><span class="iconify" data-icon="bi:star-fill"></span></li>
-                            <li><span class="iconify" data-icon="bi:star-half"></span></li>
-                        </ul>
-
-                        <!--   <a href="#" class="main-details-price-reviews-link">76 reviews</a>
-                    </div>
-                    <!-- /.main-details-price-reviews -->
-                </div>
-                <!-- /.main-details-price -->
-            </div>
-            <!-- /.main-details -->
-        </main>
-    </div>
-    <!-- /.container -->
-
-    <!--  <div class="container">
-        <footer class="footer">
-            <span class="footer-text">© TopFlowers INC. All rights reserved.</span>
-        </footer>
-    </div>
-    <!-- /.container -->
-
+  
 </body>
-
 </html>
+
+
